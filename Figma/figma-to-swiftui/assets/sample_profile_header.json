@@ -1,0 +1,87 @@
+{
+  "nodes": {
+    "20:1": {
+      "document": {
+        "id": "20:1",
+        "name": "Profile Header",
+        "type": "FRAME",
+        "visible": true,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 12,
+        "paddingTop": 12,
+        "paddingBottom": 12,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "counterAxisAlignItems": "CENTER",
+        "primaryAxisAlignItems": "MIN",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "HUG",
+        "absoluteBoundingBox": { "x": 0, "y": 0, "width": 375, "height": 72 },
+        "fills": [
+          { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+        ],
+        "children": [
+          {
+            "id": "20:2",
+            "name": "Avatar",
+            "type": "ELLIPSE",
+            "visible": true,
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "FIXED",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 48, "height": 48 },
+            "fills": [
+              { "type": "IMAGE", "visible": true, "scaleMode": "FILL", "imageRef": "abc123" }
+            ]
+          },
+          {
+            "id": "20:3",
+            "name": "Name Block",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "VERTICAL",
+            "itemSpacing": 2,
+            "counterAxisAlignItems": "MIN",
+            "layoutSizingHorizontal": "HUG",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "20:4",
+                "name": "User Name",
+                "type": "TEXT",
+                "visible": true,
+                "characters": "Ada Lovelace",
+                "style": { "fontSize": 16, "fontWeight": 600, "textAlignHorizontal": "LEFT" },
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.1, "g": 0.12, "b": 0.16, "a": 1 } }
+                ]
+              },
+              {
+                "id": "20:5",
+                "name": "Handle",
+                "type": "TEXT",
+                "visible": true,
+                "characters": "@ada",
+                "style": { "fontSize": 13, "fontWeight": 400, "textAlignHorizontal": "LEFT" },
+                "fills": [
+                  { "type": "SOLID", "visible": true, "color": { "r": 0.5, "g": 0.53, "b": 0.58, "a": 1 } }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "20:6",
+            "name": "Settings Icon",
+            "type": "VECTOR",
+            "visible": true,
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "FIXED",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 24, "height": 24 },
+            "fills": [
+              { "type": "SOLID", "visible": true, "color": { "r": 0.4, "g": 0.43, "b": 0.48, "a": 1 } }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

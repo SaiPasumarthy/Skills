@@ -1,0 +1,8 @@
+{"eval_id":1,"eval_name":"profile-header","prompt":"Build SwiftUI for a Figma profile-header row: avatar image, name+handle stacked, settings icon, horizontal.","assertions":[
+ {"text":"Uses HStack for the horizontal row"},
+ {"text":"Nested VStack holds name 'Ada Lovelace' and handle '@ada'"},
+ {"text":"Avatar rendered as a circular image (clipShape(Circle))"},
+ {"text":"Settings icon present (Image or SF Symbol)"},
+ {"text":"Produces an asset manifest listing Avatar and SettingsIcon"},
+ {"text":"Defines reusable Color tokens"}
+]}

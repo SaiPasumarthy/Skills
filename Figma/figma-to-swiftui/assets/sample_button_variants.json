@@ -1,0 +1,73 @@
+{
+  "nodes": {
+    "40:1": {
+      "document": {
+        "id": "40:1",
+        "name": "Button",
+        "type": "COMPONENT_SET",
+        "visible": true,
+        "children": [
+          {
+            "id": "40:2",
+            "name": "Style=Primary",
+            "type": "COMPONENT",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER", "counterAxisAlignItems": "CENTER",
+            "paddingTop": 12, "paddingBottom": 12, "paddingLeft": 20, "paddingRight": 20,
+            "cornerRadius": 10,
+            "layoutSizingHorizontal": "HUG", "layoutSizingVertical": "HUG",
+            "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.13, "g": 0.39, "b": 0.96, "a": 1 } } ],
+            "children": [
+              {
+                "id": "40:3", "name": "Label", "type": "TEXT", "visible": true,
+                "characters": "Button", "style": { "fontSize": 16, "fontWeight": 600, "textAlignHorizontal": "CENTER" },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ]
+              }
+            ]
+          },
+          {
+            "id": "40:4",
+            "name": "Style=Secondary",
+            "type": "COMPONENT",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER", "counterAxisAlignItems": "CENTER",
+            "paddingTop": 12, "paddingBottom": 12, "paddingLeft": 20, "paddingRight": 20,
+            "cornerRadius": 10,
+            "layoutSizingHorizontal": "HUG", "layoutSizingVertical": "HUG",
+            "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.9, "g": 0.93, "b": 1, "a": 1 } } ],
+            "strokes": [ { "type": "SOLID", "color": { "r": 0.13, "g": 0.39, "b": 0.96, "a": 1 } } ],
+            "strokeWeight": 1,
+            "children": [
+              {
+                "id": "40:5", "name": "Label", "type": "TEXT", "visible": true,
+                "characters": "Button", "style": { "fontSize": 16, "fontWeight": 600, "textAlignHorizontal": "CENTER" },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.13, "g": 0.39, "b": 0.96, "a": 1 } } ]
+              }
+            ]
+          },
+          {
+            "id": "40:6",
+            "name": "Style=Disabled",
+            "type": "COMPONENT",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER", "counterAxisAlignItems": "CENTER",
+            "paddingTop": 12, "paddingBottom": 12, "paddingLeft": 20, "paddingRight": 20,
+            "cornerRadius": 10, "opacity": 0.5,
+            "layoutSizingHorizontal": "HUG", "layoutSizingVertical": "HUG",
+            "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.8, "g": 0.82, "b": 0.86, "a": 1 } } ],
+            "children": [
+              {
+                "id": "40:7", "name": "Label", "type": "TEXT", "visible": true,
+                "characters": "Button", "style": { "fontSize": 16, "fontWeight": 600, "textAlignHorizontal": "CENTER" },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.5, "g": 0.52, "b": 0.56, "a": 1 } } ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

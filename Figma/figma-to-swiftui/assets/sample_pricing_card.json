@@ -1,0 +1,99 @@
+{
+  "nodes": {
+    "30:1": {
+      "document": {
+        "id": "30:1",
+        "name": "Pricing Card",
+        "type": "FRAME",
+        "visible": true,
+        "layoutMode": "VERTICAL",
+        "itemSpacing": 16,
+        "paddingTop": 24, "paddingBottom": 24, "paddingLeft": 20, "paddingRight": 20,
+        "counterAxisAlignItems": "MIN",
+        "cornerRadius": 20,
+        "layoutSizingHorizontal": "FIXED",
+        "layoutSizingVertical": "HUG",
+        "absoluteBoundingBox": { "x": 0, "y": 0, "width": 320, "height": 360 },
+        "fills": [
+          { "type": "GRADIENT_LINEAR", "visible": true,
+            "gradientStops": [
+              { "position": 0, "color": { "r": 0.36, "g": 0.42, "b": 0.95, "a": 1 } },
+              { "position": 1, "color": { "r": 0.55, "g": 0.32, "b": 0.9, "a": 1 } }
+            ] }
+        ],
+        "children": [
+          {
+            "id": "30:2",
+            "name": "Header Row",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "30:3", "name": "Plan Name", "type": "TEXT", "visible": true,
+                "characters": "Pro", "style": { "fontSize": 22, "fontWeight": 700, "textAlignHorizontal": "LEFT" },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ]
+              },
+              {
+                "id": "30:4", "name": "Badge", "type": "FRAME", "visible": true,
+                "layoutMode": "HORIZONTAL",
+                "paddingTop": 4, "paddingBottom": 4, "paddingLeft": 10, "paddingRight": 10,
+                "cornerRadius": 12, "counterAxisAlignItems": "CENTER",
+                "layoutSizingHorizontal": "HUG", "layoutSizingVertical": "HUG",
+                "fills": [ { "type": "SOLID", "visible": true, "opacity": 0.2, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ],
+                "children": [
+                  {
+                    "id": "30:5", "name": "Badge Text", "type": "TEXT", "visible": true,
+                    "characters": "Popular", "style": { "fontSize": 12, "fontWeight": 600 },
+                    "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "30:6", "name": "Price", "type": "TEXT", "visible": true,
+            "characters": "$29/mo", "style": { "fontSize": 34, "fontWeight": 800, "textAlignHorizontal": "LEFT" },
+            "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ]
+          },
+          {
+            "id": "30:7", "name": "Feature Row", "type": "FRAME", "visible": true,
+            "layoutMode": "HORIZONTAL", "itemSpacing": 8, "counterAxisAlignItems": "CENTER",
+            "layoutSizingHorizontal": "HUG", "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "30:8", "name": "Check Icon", "type": "VECTOR", "visible": true,
+                "layoutSizingHorizontal": "FIXED", "layoutSizingVertical": "FIXED",
+                "absoluteBoundingBox": { "x": 0, "y": 0, "width": 18, "height": 18 },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ]
+              },
+              {
+                "id": "30:9", "name": "Feature Label", "type": "TEXT", "visible": true,
+                "characters": "Unlimited projects", "style": { "fontSize": 15, "fontWeight": 400 },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.95, "g": 0.95, "b": 1, "a": 1 } } ]
+              }
+            ]
+          },
+          {
+            "id": "30:10", "name": "CTA Button", "type": "FRAME", "visible": true,
+            "layoutMode": "HORIZONTAL", "primaryAxisAlignItems": "CENTER", "counterAxisAlignItems": "CENTER",
+            "paddingTop": 14, "paddingBottom": 14, "paddingLeft": 16, "paddingRight": 16,
+            "cornerRadius": 12, "layoutSizingHorizontal": "FILL", "layoutSizingVertical": "HUG",
+            "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 1, "g": 1, "b": 1, "a": 1 } } ],
+            "children": [
+              {
+                "id": "30:11", "name": "CTA Label", "type": "TEXT", "visible": true,
+                "characters": "Choose Pro", "style": { "fontSize": 16, "fontWeight": 700, "textAlignHorizontal": "CENTER" },
+                "fills": [ { "type": "SOLID", "visible": true, "color": { "r": 0.36, "g": 0.42, "b": 0.95, "a": 1 } } ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

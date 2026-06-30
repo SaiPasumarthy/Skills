@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Emits design-color tokens",
+      "passed": true,
+      "evidence": "files=['LoginCardView.swift', 'DesignTokens.swift']"
+    },
+    {
+      "text": "Uses VStack layout",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Preserves text ('Welcome back' + 'Sign In')",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Card sizing 320 / radius 16 / shadow",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Email field becomes TextField",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "View uses token refs not only inline colors",
+      "passed": true,
+      "evidence": "inline=1"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

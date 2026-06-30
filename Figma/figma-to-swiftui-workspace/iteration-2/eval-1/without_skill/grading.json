@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Uses HStack row",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Nested VStack name+handle",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Avatar circular (clipShape(Circle))",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Settings icon present",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Asset manifest lists Avatar + SettingsIcon",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Defines color tokens",
+      "passed": true,
+      "evidence": ""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.833
+  }
+}

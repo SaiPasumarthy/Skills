@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "skill_name": "figma-to-swiftui",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-06-30T13:38:00Z",
+    "evals_run": [
+      0,
+      1
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 64.6,
+        "tokens": 39013,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Emits a separate design-tokens file with Color(red:..) tokens",
+          "passed": true,
+          "evidence": "files=['Assets.md', 'LoginCardView.swift', 'DesignTokens.swift', 'figma_ir.json']; color-token defs found=True"
+        },
+        {
+          "text": "Uses VStack for the vertical auto-layout",
+          "passed": true,
+          "evidence": "VStack in view"
+        },
+        {
+          "text": "Preserves text content ('Welcome back' and 'Sign In')",
+          "passed": true,
+          "evidence": "both strings present"
+        },
+        {
+          "text": "Captures card sizing: 320pt width, 16pt corner radius, drop shadow",
+          "passed": true,
+          "evidence": "320=True radius16=True shadow=True"
+        },
+        {
+          "text": "Upgrades the email RECTANGLE into a real TextField",
+          "passed": true,
+          "evidence": "TextField present"
+        },
+        {
+          "text": "View references named color tokens rather than only inline Color literals",
+          "passed": true,
+          "evidence": "inline Color(red literals in view=1"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 87.0,
+        "tokens": 39679,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses HStack for the horizontal row",
+          "passed": true,
+          "evidence": "HStack present"
+        },
+        {
+          "text": "Nested VStack holds name 'Ada Lovelace' and handle '@ada'",
+          "passed": true,
+          "evidence": "VStack=True name=True handle=True"
+        },
+        {
+          "text": "Avatar rendered as a circular image (clipShape(Circle))",
+          "passed": true,
+          "evidence": "circular clip present"
+        },
+        {
+          "text": "Settings icon present (Image or SF Symbol)",
+          "passed": true,
+          "evidence": "settings glyph present"
+        },
+        {
+          "text": "Produces an asset manifest listing Avatar and SettingsIcon",
+          "passed": true,
+          "evidence": "Assets.md=True"
+        },
+        {
+          "text": "Defines reusable Color tokens",
+          "passed": true,
+          "evidence": "color tokens present"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 68.4,
+        "tokens": 34188,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Emits a separate design-tokens file with Color(red:..) tokens",
+          "passed": true,
+          "evidence": "files=['LoginCardView.swift', 'DesignTokens.swift']; color-token defs found=True"
+        },
+        {
+          "text": "Uses VStack for the vertical auto-layout",
+          "passed": true,
+          "evidence": "VStack in view"
+        },
+        {
+          "text": "Preserves text content ('Welcome back' and 'Sign In')",
+          "passed": true,
+          "evidence": "both strings present"
+        },
+        {
+          "text": "Captures card sizing: 320pt width, 16pt corner radius, drop shadow",
+          "passed": true,
+          "evidence": "320=True radius16=True shadow=True"
+        },
+        {
+          "text": "Upgrades the email RECTANGLE into a real TextField",
+          "passed": true,
+          "evidence": "TextField present"
+        },
+        {
+          "text": "View references named color tokens rather than only inline Color literals",
+          "passed": true,
+          "evidence": "inline Color(red literals in view=1"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.833,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 45.8,
+        "tokens": 31283,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses HStack for the horizontal row",
+          "passed": true,
+          "evidence": "HStack present"
+        },
+        {
+          "text": "Nested VStack holds name 'Ada Lovelace' and handle '@ada'",
+          "passed": true,
+          "evidence": "VStack=True name=True handle=True"
+        },
+        {
+          "text": "Avatar rendered as a circular image (clipShape(Circle))",
+          "passed": true,
+          "evidence": "circular clip present"
+        },
+        {
+          "text": "Settings icon present (Image or SF Symbol)",
+          "passed": true,
+          "evidence": "settings glyph present"
+        },
+        {
+          "text": "Produces an asset manifest listing Avatar and SettingsIcon",
+          "passed": false,
+          "evidence": "Assets.md=False"
+        },
+        {
+          "text": "Defines reusable Color tokens",
+          "passed": true,
+          "evidence": "color tokens present"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 75.8,
+        "stddev": 15.8392,
+        "min": 64.6,
+        "max": 87.0
+      },
+      "tokens": {
+        "mean": 39346.0,
+        "stddev": 470.9331,
+        "min": 39013,
+        "max": 39679
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.9165,
+        "stddev": 0.1181,
+        "min": 0.833,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 57.1,
+        "stddev": 15.9806,
+        "min": 45.8,
+        "max": 68.4
+      },
+      "tokens": {
+        "mean": 32735.5,
+        "stddev": 2054.1452,
+        "min": 31283,
+        "max": 34188
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.08",
+      "time_seconds": "+18.7",
+      "tokens": "+6610"
+    }
+  },
+  "notes": []
+}

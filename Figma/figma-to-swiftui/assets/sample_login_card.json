@@ -1,0 +1,112 @@
+{
+  "nodes": {
+    "10:2": {
+      "document": {
+        "id": "10:2",
+        "name": "Login Card",
+        "type": "FRAME",
+        "visible": true,
+        "layoutMode": "VERTICAL",
+        "itemSpacing": 16,
+        "paddingTop": 24,
+        "paddingBottom": 24,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "counterAxisAlignItems": "CENTER",
+        "cornerRadius": 16,
+        "layoutSizingHorizontal": "FIXED",
+        "layoutSizingVertical": "HUG",
+        "absoluteBoundingBox": { "x": 0, "y": 0, "width": 320, "height": 280 },
+        "fills": [
+          { "type": "SOLID", "visible": true, "opacity": 1,
+            "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+        ],
+        "effects": [
+          { "type": "DROP_SHADOW", "visible": true, "radius": 24,
+            "offset": { "x": 0, "y": 8 },
+            "color": { "r": 0, "g": 0, "b": 0, "a": 0.12 } }
+        ],
+        "children": [
+          {
+            "id": "10:3",
+            "name": "Title",
+            "type": "TEXT",
+            "visible": true,
+            "characters": "Welcome back",
+            "style": { "fontSize": 24, "fontWeight": 700, "textAlignHorizontal": "CENTER", "lineHeightPx": 30 },
+            "fills": [
+              { "type": "SOLID", "visible": true,
+                "color": { "r": 0.07, "g": 0.09, "b": 0.15, "a": 1 } }
+            ]
+          },
+          {
+            "id": "10:4",
+            "name": "Subtitle",
+            "type": "TEXT",
+            "visible": true,
+            "characters": "Sign in to continue",
+            "style": { "fontSize": 14, "fontWeight": 400, "textAlignHorizontal": "CENTER" },
+            "fills": [
+              { "type": "SOLID", "visible": true,
+                "color": { "r": 0.42, "g": 0.45, "b": 0.5, "a": 1 } }
+            ]
+          },
+          {
+            "id": "10:5",
+            "name": "Email Field",
+            "type": "RECTANGLE",
+            "visible": true,
+            "cornerRadius": 8,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 280, "height": 44 },
+            "fills": [
+              { "type": "SOLID", "visible": true,
+                "color": { "r": 0.95, "g": 0.96, "b": 0.97, "a": 1 } }
+            ],
+            "strokes": [
+              { "type": "SOLID", "color": { "r": 0.85, "g": 0.87, "b": 0.9, "a": 1 } }
+            ],
+            "strokeWeight": 1
+          },
+          {
+            "id": "10:6",
+            "name": "Sign In Button",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "counterAxisAlignItems": "CENTER",
+            "primaryAxisAlignItems": "CENTER",
+            "itemSpacing": 8,
+            "paddingTop": 12,
+            "paddingBottom": 12,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "cornerRadius": 10,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 280, "height": 44 },
+            "fills": [
+              { "type": "SOLID", "visible": true,
+                "color": { "r": 0.13, "g": 0.39, "b": 0.96, "a": 1 } }
+            ],
+            "children": [
+              {
+                "id": "10:7",
+                "name": "Button Label",
+                "type": "TEXT",
+                "visible": true,
+                "characters": "Sign In",
+                "style": { "fontSize": 16, "fontWeight": 600, "textAlignHorizontal": "CENTER" },
+                "fills": [
+                  { "type": "SOLID", "visible": true,
+                    "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

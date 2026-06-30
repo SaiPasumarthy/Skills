@@ -1,0 +1,13 @@
+{
+  "targets": [
+    "Button"
+  ],
+  "colors": [
+    "#FFFFFF",
+    "#2163F5",
+    "#E6EDFF",
+    "#80858F",
+    "#CCD1DB"
+  ],
+  "assets": {}
+}

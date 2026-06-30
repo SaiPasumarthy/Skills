@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Single view, NOT 3 near-duplicate View structs",
+      "passed": true,
+      "evidence": "View structs=1, idiomatic=True"
+    },
+    {
+      "text": "All three variants represented",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Secondary has a stroke/border",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Disabled handled (opacity .5 or .disabled)",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Idiomatic variant modeling (enum/ButtonStyle)",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Defines color tokens",
+      "passed": false,
+      "evidence": ""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.833
+  }
+}

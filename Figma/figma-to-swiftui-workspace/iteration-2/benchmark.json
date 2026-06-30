@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "skill_name": "figma-to-swiftui",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-06-30T13:51:08Z",
+    "evals_run": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 88.8,
+        "tokens": 40445,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Emits design-color tokens",
+          "passed": true,
+          "evidence": "files=['Assets.md', 'LoginCardView.swift', 'DesignTokens.swift', 'figma_ir.json']"
+        },
+        {
+          "text": "Uses VStack layout",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Preserves text ('Welcome back' + 'Sign In')",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Card sizing 320 / radius 16 / shadow",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Email field becomes TextField",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "View uses token refs not only inline colors",
+          "passed": true,
+          "evidence": "inline=1"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 84.2,
+        "tokens": 41946,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses HStack row",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Nested VStack name+handle",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Avatar circular (clipShape(Circle))",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Settings icon present",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Asset manifest lists Avatar + SettingsIcon",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Defines color tokens",
+          "passed": true,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 326.5,
+        "tokens": 41683,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gradient background (LinearGradient)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Header SPACE_BETWEEN -> Spacer + 'Pro' + 'Popular'",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Big price '$29/mo'",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Feature row: check icon + 'Unlimited projects'",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "CTA becomes a Button ('Choose Pro')",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Color tokens, not only inline magic colors",
+          "passed": true,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 318.8,
+        "tokens": 42090,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Single view, NOT 3 near-duplicate View structs",
+          "passed": true,
+          "evidence": "View structs=1, idiomatic=True"
+        },
+        {
+          "text": "All three variants represented",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Secondary has a stroke/border",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Disabled handled (opacity .5 or .disabled)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Idiomatic variant modeling (enum/ButtonStyle)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Defines color tokens",
+          "passed": true,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 68.4,
+        "tokens": 34188,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Emits design-color tokens",
+          "passed": true,
+          "evidence": "files=['LoginCardView.swift', 'DesignTokens.swift']"
+        },
+        {
+          "text": "Uses VStack layout",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Preserves text ('Welcome back' + 'Sign In')",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Card sizing 320 / radius 16 / shadow",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Email field becomes TextField",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "View uses token refs not only inline colors",
+          "passed": true,
+          "evidence": "inline=1"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.833,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 45.8,
+        "tokens": 31283,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses HStack row",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Nested VStack name+handle",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Avatar circular (clipShape(Circle))",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Settings icon present",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Asset manifest lists Avatar + SettingsIcon",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Defines color tokens",
+          "passed": true,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.833,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 43.7,
+        "tokens": 32227,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gradient background (LinearGradient)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Header SPACE_BETWEEN -> Spacer + 'Pro' + 'Popular'",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Big price '$29/mo'",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Feature row: check icon + 'Unlimited projects'",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "CTA becomes a Button ('Choose Pro')",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Color tokens, not only inline magic colors",
+          "passed": true,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.833,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 41.9,
+        "tokens": 30980,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Single view, NOT 3 near-duplicate View structs",
+          "passed": true,
+          "evidence": "View structs=1, idiomatic=True"
+        },
+        {
+          "text": "All three variants represented",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Secondary has a stroke/border",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Disabled handled (opacity .5 or .disabled)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Idiomatic variant modeling (enum/ButtonStyle)",
+          "passed": true,
+          "evidence": ""
+        },
+        {
+          "text": "Defines color tokens",
+          "passed": false,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 204.575,
+        "stddev": 136.3904,
+        "min": 84.2,
+        "max": 326.5
+      },
+      "tokens": {
+        "mean": 41541.0,
+        "stddev": 749.8458,
+        "min": 40445,
+        "max": 42090
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8747,
+        "stddev": 0.0835,
+        "min": 0.833,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 49.95,
+        "stddev": 12.4028,
+        "min": 41.9,
+        "max": 68.4
+      },
+      "tokens": {
+        "mean": 32169.5,
+        "stddev": 1446.656,
+        "min": 30980,
+        "max": 34188
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.13",
+      "time_seconds": "+154.6",
+      "tokens": "+9372"
+    }
+  },
+  "notes": []
+}

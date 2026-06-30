@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Uses HStack for the horizontal row",
+      "passed": true,
+      "evidence": "HStack present"
+    },
+    {
+      "text": "Nested VStack holds name 'Ada Lovelace' and handle '@ada'",
+      "passed": true,
+      "evidence": "VStack=True name=True handle=True"
+    },
+    {
+      "text": "Avatar rendered as a circular image (clipShape(Circle))",
+      "passed": true,
+      "evidence": "circular clip present"
+    },
+    {
+      "text": "Settings icon present (Image or SF Symbol)",
+      "passed": true,
+      "evidence": "settings glyph present"
+    },
+    {
+      "text": "Produces an asset manifest listing Avatar and SettingsIcon",
+      "passed": false,
+      "evidence": "Assets.md=False"
+    },
+    {
+      "text": "Defines reusable Color tokens",
+      "passed": true,
+      "evidence": "color tokens present"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.833
+  }
+}

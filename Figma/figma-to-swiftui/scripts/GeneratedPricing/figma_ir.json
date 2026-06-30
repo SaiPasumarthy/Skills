@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "Pricing Card"
+  ],
+  "colors": [
+    "#FFFFFF",
+    "#F2F2FF",
+    "#5C6BF2"
+  ],
+  "assets": {
+    "30:8": {
+      "name": "CheckIcon",
+      "fmt": "svg"
+    }
+  }
+}

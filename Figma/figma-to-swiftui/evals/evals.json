@@ -1,0 +1,21 @@
+{
+  "skill_name": "figma-to-swiftui",
+  "evals": [
+    {
+      "id": 0,
+      "name": "login-card",
+      "prompt": "I exported one of our Figma screens as JSON (the API response is at assets/sample_login_card.json in the skill folder). It's a login card. Convert it into production-ready SwiftUI views I can drop into Xcode. I want real colors, fonts, layout, and a tokens file — not a screenshot guess.",
+      "expected_output": "A SwiftUI View (VStack-based login card) plus a DesignTokens file with the design's colors and fonts. Auto-layout maps to VStack/HStack with correct spacing/padding; button and text field flagged for follow-up.",
+      "files": ["assets/sample_login_card.json"],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "name": "profile-header",
+      "prompt": "Here's a Figma profile-header row exported to JSON at assets/sample_profile_header.json. Build the SwiftUI for it. It has an avatar image, the user's name and handle stacked, and a settings icon on a horizontal row.",
+      "expected_output": "A SwiftUI View using HStack with an Image avatar, a nested VStack for name/handle, and an Image for the settings icon, plus a tokens file and an asset manifest listing the avatar and settings icon.",
+      "files": ["assets/sample_profile_header.json"],
+      "assertions": []
+    }
+  ]
+}

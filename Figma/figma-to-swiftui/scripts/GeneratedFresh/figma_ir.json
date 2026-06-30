@@ -1,0 +1,20 @@
+{
+  "targets": [
+    "Profile Header"
+  ],
+  "colors": [
+    "#1A1F29",
+    "#808794",
+    "#FFFFFF"
+  ],
+  "assets": {
+    "20:2": {
+      "name": "Avatar",
+      "fmt": "png"
+    },
+    "20:6": {
+      "name": "SettingsIcon",
+      "fmt": "svg"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Emits a separate design-tokens file with Color(red:..) tokens",
+      "passed": true,
+      "evidence": "files=['LoginCardView.swift', 'DesignTokens.swift']; color-token defs found=True"
+    },
+    {
+      "text": "Uses VStack for the vertical auto-layout",
+      "passed": true,
+      "evidence": "VStack in view"
+    },
+    {
+      "text": "Preserves text content ('Welcome back' and 'Sign In')",
+      "passed": true,
+      "evidence": "both strings present"
+    },
+    {
+      "text": "Captures card sizing: 320pt width, 16pt corner radius, drop shadow",
+      "passed": true,
+      "evidence": "320=True radius16=True shadow=True"
+    },
+    {
+      "text": "Upgrades the email RECTANGLE into a real TextField",
+      "passed": true,
+      "evidence": "TextField present"
+    },
+    {
+      "text": "View references named color tokens rather than only inline Color literals",
+      "passed": true,
+      "evidence": "inline Color(red literals in view=1"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,8 @@
+{"eval_id":0,"eval_name":"login-card","prompt":"Convert exported Figma login-card JSON into production-ready SwiftUI views with real colors, fonts, layout, and a tokens file.","assertions":[
+ {"text":"Emits a separate design-tokens file with Color(red:..) tokens"},
+ {"text":"Uses VStack for the vertical auto-layout"},
+ {"text":"Preserves text content ('Welcome back' and 'Sign In')"},
+ {"text":"Captures card sizing: 320pt width, 16pt corner radius, drop shadow"},
+ {"text":"Upgrades the email RECTANGLE into a real TextField"},
+ {"text":"View references named color tokens rather than only inline Color literals"}
+]}

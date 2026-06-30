@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Gradient background (LinearGradient)",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Header SPACE_BETWEEN -> Spacer + 'Pro' + 'Popular'",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Big price '$29/mo'",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Feature row: check icon + 'Unlimited projects'",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "CTA becomes a Button ('Choose Pro')",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "text": "Color tokens, not only inline magic colors",
+      "passed": true,
+      "evidence": ""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.833
+  }
+}

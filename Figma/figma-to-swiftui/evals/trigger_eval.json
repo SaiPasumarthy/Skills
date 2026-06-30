@@ -1,0 +1,23 @@
+[
+  {"query": "here's the figma for our onboarding screen https://www.figma.com/design/abc123/App?node-id=42-10 — can you build it in SwiftUI?", "should_trigger": true},
+  {"query": "implement this design as a SwiftUI view: https://figma.com/file/XyZ/Mobile?node-id=12-3", "should_trigger": true},
+  {"query": "I'm on Devin and can't hook up the figma dev mode mcp. turn file key qWeRtY node 88:2 into iOS code", "should_trigger": true},
+  {"query": "convert our design system button component from figma into a reusable swiftui view with variants", "should_trigger": true},
+  {"query": "we have a settings screen mocked up in figma, generate the swift views for it — my FIGMA_TOKEN is set", "should_trigger": true},
+  {"query": "take the pricing card frame from figma and produce production-ready SwiftUI with the gradient background and all", "should_trigger": true},
+  {"query": "build the profile header from this figma link, I need it as SwiftUI for our iOS app", "should_trigger": true},
+  {"query": "pull the colors and typography from this figma file and make a DesignTokens.swift plus the login screen", "should_trigger": true},
+  {"query": "@figma-to-swiftui implement node 10-2 from file abcd", "should_trigger": true},
+  {"query": "the designer just shared https://www.figma.com/design/9f/Checkout?node-id=5-9 — code up the checkout screen for iOS", "should_trigger": true},
+
+  {"query": "build a SwiftUI login screen from scratch with email and password fields", "should_trigger": false},
+  {"query": "turn this figma design into React components with Tailwind", "should_trigger": false},
+  {"query": "generate Android Jetpack Compose UI from this figma url", "should_trigger": false},
+  {"query": "convert this figma frame to HTML and CSS", "should_trigger": false},
+  {"query": "export this figma frame as a 2x PNG so I can drop it in a deck", "should_trigger": false},
+  {"query": "help me set up a figma personal access token and scopes", "should_trigger": false},
+  {"query": "review my existing SwiftUI ContentView for performance problems", "should_trigger": false},
+  {"query": "what's the difference between VStack and HStack in SwiftUI?", "should_trigger": false},
+  {"query": "I have a screenshot of an app screen, rebuild it in SwiftUI", "should_trigger": false},
+  {"query": "convert this Sketch file into SwiftUI views", "should_trigger": false}
+]

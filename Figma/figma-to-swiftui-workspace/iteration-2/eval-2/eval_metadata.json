@@ -1,0 +1,1 @@
+{"eval_id":2,"eval_name":"pricing-card","prompt":"Convert a Figma pricing card (gradient background, a header row with the plan name and a 'Popular' badge pushed to opposite ends, a big price, a feature row with a check icon, and a white CTA button) from its exported JSON into production-ready SwiftUI."}
